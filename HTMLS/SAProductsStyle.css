@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+}
+
+div{
+    font-size: 150%;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
+    color: #1B1B1B;
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+}
+
+h2 {
+    color: #1B1B1B;
+    text-align: center;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h3 {
+    color: #1B1B1B;
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+h4{
+    color: #545454;
+    text-align: left;
+    font-family: Arial;
+    font-weight: 200;
+    font-size: 23px;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+div.TopImage{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 400px;
+    left: 875px;
+    top: 15px;
+}
+
+div.Circle{
+    margin-left: 4%;
+}
+
+div.HaoriCircle{
+    position: absolute;
+    left: 1160px;
+    top: 0px;
+
+}
+
+label.reserve {
+    position: absolute;
+    color: #1B1B1B;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1250px;
+    top: 0px;
+}
+
+label.year {
+    position: absolute;
+    color: #1B1B1B;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1325px;
+    top: 10px;
+}
+
+div.TopBar{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/TopNavigationBar.png);
+    background-size: 100%;
+    height: 77px;
+}
+
+div.Haori{
+    position: absolute;
+    top:0px;
+    left: 255px;
+    width: 250px;
+}
+
+div.SearchBorder {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 1px solid white;
+    background-color: #9b9b9b;
+    border-radius: 50px;
+    left: 450px;
+    top: 15px;
+}
+
+div.SearchContent {
+    width: 100%;
+    vertical-align: middle;
+} 
+
+.search{
+    border:none;
+    height: 40  px;
+    width: 315px;
+    padding: 0px 5px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Arial";
+    font-weight: 100;
+    color: #ffffff;
+}
+
+div.NavBar1{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/BottomNavigationBar.png);
+    background-size: 100%;
+    top: 70px;
+    font-size: 35px;
+    height: 33px;
+    text-decoration: none;
+}
+
+div.Home{
+    position:absolute;
+    left: 12%;
+    top: 50px;
+
+}
+
+div.AboutUs{
+    position:absolute;
+    left: 25%;
+    top: 50px;
+}
+
+div.Platforms{
+    position:absolute;
+    left: 40%;
+    top: 50px;
+}
+
+div.Products{
+    position:absolute;
+    left: 53%;
+    top: 50px;
+    text-decoration: underline 2px #545454;
+}
+
+div.Services{
+    position:absolute;
+    left: 66.5%;
+    top: 50px;
+
+}
+
+div.SupportUs{
+    position:absolute;
+    left: 78%;
+    top: 50px;
+}
+
+a {
+    color: #1B1B1B;
+    padding: 5px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    top: 5px;
+}
+
+div.LogIn{
+    position: absolute;
+    color: #545454;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1287px;
+    top: 35px;
+}
+
+div.SignUp{
+    position: absolute;
+    color: #545454;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1274px;
+    top: 55px;
+}
+
+body {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    padding: 2%;
+}
+
+strong{
+    font-size: 125%;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 50%;
+    color: #545454;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.BoxesAboutUs{
+    height: 100%;
+    color: transparent;
+}
+
+div.AboutUsBox {
+    position: absolute;
+    left: 15px;
+    width: 1250px;
+    height: 80px;
+    top: 125px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.AyakaFBox {
+    position: absolute;
+    left: 50px;
+    width: 290px;
+    height: 300px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.AyakaFan {
+    position: absolute;
+    top: 15px;
+    height:50%;
+    width:auto;
+    margin-left: 20px;
+}
+
+div.DescriptionAboutUsAyakaF {
+    position: absolute;
+    top: 200px;
+    height:50%;
+    width:auto;
+    margin-left: 12px;
+}
+
+div.CatHBox {
+    position: absolute;
+    left: 347px;
+    width: 290px;
+    height: 300px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 26px;
+}
+
+div.CatHaori {
+    position: absolute;
+    top: 10px;
+    height:60%;
+    width:auto;
+    margin-left: 50px;
+}
+
+div.DescriptionAboutUsCatH {
+    position: absolute;
+    top: 200px;
+    height:50%;
+    width:auto;
+    margin-left: 50px;
+}
+
+div.ChineseFBox {
+    position: absolute;
+    left: 645px;
+    width: 290px;
+    height: 300px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 26px;
+}
+
+div.ChineseFan {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 55px;
+}
+
+div.DescriptionAboutUsChineseF {
+    position: absolute;
+    top: 200px;
+    height:50%;
+    width:auto;
+    margin-left: 85px;
+}
+
+div.FansBox {
+    position: absolute;
+    left: 945px;
+    width: 290px;
+    height: 300px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 26px;
+}
+
+div.Fans {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 55px;
+}
+
+div.DescriptionAboutUsFans {
+    position: absolute;
+    top: 200px;
+    height:50%;
+    width:auto;
+    margin-left: 75px;
+}
+
+div.FishHBox {
+    position: absolute;
+    left: 50px;
+    width: 290px;
+    height: 350px;
+    top: 520px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.FishHaori {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 35px;
+}
+
+div.DescriptionAboutUsFishH {
+    position: absolute;
+    top: 230px;
+    height:50%;
+    width:auto;
+    margin-left: 53px;
+}
+
+div.FoxHBox {
+    position: absolute;
+    left: 347px;
+    width: 290px;
+    height: 350px;
+    top: 520px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.FoxHaori {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 40px;
+}
+
+div.DescriptionAboutUsFoxH {
+    position: absolute;
+    top: 230px;
+    height:50%;
+    width:auto;
+    margin-left: 60px;
+}
+
+div.GoldHBox {
+    position: absolute;
+    left: 645px;
+    width: 290px;
+    height: 350px;
+    top: 520px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.GoldHaori {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 30px;
+}
+
+div.DescriptionAboutUsGoldH {
+    position: absolute;
+    top: 230px;
+    height:50%;
+    width:auto;
+    margin-left: 45px;
+}
+
+div.MikuHBox {
+    position: absolute;
+    left: 945px;
+    width: 290px;
+    height: 350px;
+    top: 520px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.MikuHatsume {
+    position: absolute;
+    top: 15px;
+    height:60%;
+    width:auto;
+    margin-left: 35px;
+}
+
+div.DescriptionAboutUsMikuH {
+    position: absolute;
+    top: 230px;
+    height:50%;
+    width:auto;
+    margin-left: 35px;
+}
+
+div.Prod{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 41%;
+}
+
+div.Founders{
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 32%;
+}
+
+footer{
+    position: absolute;
+    top: 1075px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: #1B1B1B;
+    background-color: #e7e7e7;
+    font-weight: 800;
+    width: 100%;
+}

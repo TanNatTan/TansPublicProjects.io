@@ -1,0 +1,394 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+}
+
+div{
+    font-size: 150%;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
+    color: #1B1B1B;
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+}
+
+h2 {
+    color: #1B1B1B;
+    text-align: center;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h3 {
+    color: #1B1B1B;
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+h4{
+    color: #545454;
+    text-align: left;
+    font-family: Arial;
+    font-weight: 200;
+    font-size: 23px;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+div.TopImage{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 400px;
+    left: 875px;
+    top: 15px;
+}
+
+div.Circle{
+    margin-left: 4%;
+}
+
+div.HaoriCircle{
+    position: absolute;
+    left: 1160px;
+    top: 0px;
+
+}
+
+label.reserve {
+    position: absolute;
+    color: #1B1B1B;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1250px;
+    top: 0px;
+}
+
+label.year {
+    position: absolute;
+    color: #1B1B1B;
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1325px;
+    top: 10px;
+}
+
+div.TopBar{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/TopNavigationBar.png);
+    background-size: 100%;
+    height: 77px;
+}
+
+div.Haori{
+    position: absolute;
+    top:0px;
+    left: 255px;
+    width: 250px;
+}
+
+div.SearchBorder {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 1px solid white;
+    background-color: #9b9b9b;
+    border-radius: 50px;
+    left: 450px;
+    top: 15px;
+}
+
+div.SearchContent {
+    width: 100%;
+    vertical-align: middle;
+} 
+
+.search{
+    border:none;
+    height: 40  px;
+    width: 315px;
+    padding: 0px 5px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Arial";
+    font-weight: 100;
+    color: #ffffff;
+}
+
+div.NavBar1{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/BottomNavigationBar.png);
+    background-size: 100%;
+    top: 70px;
+    font-size: 35px;
+    height: 33px;
+    text-decoration: none;
+}
+
+div.Home{
+    position:absolute;
+    left: 12%;
+    top: 50px;
+
+}
+
+div.AboutUs{
+    position:absolute;
+    left: 25%;
+    top: 50px;
+    text-decoration: underline 2px #545454;
+}
+
+div.Platforms{
+    position:absolute;
+    left: 40%;
+    top: 50px;
+}
+
+div.Products{
+    position:absolute;
+    left: 53%;
+    top: 50px;
+}
+
+div.Services{
+    position:absolute;
+    left: 66.5%;
+    top: 50px;
+}
+
+div.SupportUs{
+    position:absolute;
+    left: 78%;
+    top: 50px;
+}
+
+a {
+    color: #1B1B1B;
+    padding: 5px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    top: 5px;
+}
+
+div.LogIn{
+    position: absolute;
+    color: #545454;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1287px;
+    top: 35px;
+}
+
+div.SignUp{
+    position: absolute;
+    color: #545454;
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1274px;
+    top: 55px;
+}
+
+body {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    padding: 2%;
+}
+
+strong{
+    font-size: 125%;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20%;
+    color: #545454;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.BoxesAboutUs{
+    height: 100%;
+    color: transparent;
+}
+
+div.AboutUsBox {
+    position: absolute;
+    left: 15px;
+    width: 1250px;
+    height: 80px;
+    top: 125px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.ShawBox {
+    position: absolute;
+    left: 15px;
+    width: 620px;
+    height: 250px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.Shawkunn {
+    position: absolute;
+    top: 60px;
+    height:50%;
+    width:auto;
+    margin-left: 100px;
+}
+
+div.DescriptionAboutUsShaw {
+    position: absolute;
+    top: 100px;
+    height:50%;
+    width:auto;
+    margin-left: 240px;
+}
+
+div.KenBox {
+    position: absolute;
+    left: 640px;
+    width: 625px;
+    height: 250px;
+    top: 210px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.Kenchikki {
+    position: absolute;
+    top: 60px;
+    height:50%;
+    width:auto;
+    margin-left: 100px;
+}
+
+div.DescriptionAboutUsKen {
+    position: absolute;
+    top: 100px;
+    height:50%;
+    width:auto;
+    margin-left: 240px;
+}
+
+div.PishBox {
+    position: absolute;
+    left: 15px;
+    width: 620px;
+    height: 250px;
+    top: 470px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.Pish {
+    position: absolute;
+    top: 60px;
+    height:50%;
+    width:auto;
+    margin-left: 100px;
+}
+
+div.DescriptionAboutUsPish {
+    position: absolute;
+    top: 100px;
+    height:50%;
+    width:auto;
+    margin-left: 240px;
+}
+
+div.ShiroBox {
+    position: absolute;
+    left: 640px;
+    width: 625px;
+    height: 250px;
+    top: 470px;
+    background-color: #e7e7e7;
+    margin: 2%;
+    font-size: 25px;
+}
+
+div.Shirokansen {
+    position: absolute;
+    top: 60px;
+    height:50%;
+    width:auto;
+    margin-left: 100px;
+}
+
+div.DescriptionAboutUsShiro {
+    position: absolute;
+    top: 100px;
+    height:50%;
+    width:auto;
+    margin-left: 240px;
+}
+
+div.AbUs{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 42%;
+}
+
+div.Founders{
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 47%;
+}
+
+footer{
+    position: absolute;
+    top: 780px;
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: #1B1B1B;
+    background-color: #e7e7e7;
+    font-weight: 800;
+    width: 100%;
+}
