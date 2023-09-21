@@ -20,7 +20,7 @@ body{
     align-items: center;
     justify-content: center;
     font-size: 18px;
-    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
+    background-image:url(./Mountains_Background.jpg);
     background-size: cover;
 }
 
@@ -47,8 +47,8 @@ div.container,form__input,form__button {
 }
 
 .form > *:last-child {
-    margin-bottom: 0;
-}
+    margin-top: 0;
+}   
 
 .form__title {
     margin-bottom: 2rem;
@@ -81,7 +81,7 @@ div.container,form__input,form__button {
     border: 1px solid #e7e7e7;
     outline: none;
     background: #ffffff;
-        transition: background 0.2s, border-color 0.2s;
+    transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input:focus {
@@ -93,6 +93,7 @@ div.container,form__input,form__button {
     color: var(--color-error);
     border-color: var(--color-error);
 }
+
 
 .form__input-error-message {
     margin-top: 0.5rem;
@@ -115,11 +116,12 @@ div.container,form__input,form__button {
 
 .form__button:hover {
     background: var(--color-primary-dark);
-}
+} 
 
 .form__button:active {
     transform: scale(0.98);
 }
+
 
 .form__text {
     text-align: center;
