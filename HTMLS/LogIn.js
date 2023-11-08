@@ -20,22 +20,17 @@ function getInfo() {
     var username = document.querySelector("#login input[name='username']").value;
     var password = document.querySelector("#login input[name='password']").value;
 
-    var objPeople = [
-        { username: "admin", password: "admin" },
-        { username: "student1", password: "1234" }
-    ];
-
-    for (let i = 0; i < objPeople.length; i++) {
-        if (username == objPeople[i].username && password == objPeople[i].password) {
-            // Redirect to a new page after successful login
-            window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/HTMLS/SA1_ALFORQUE.html";
-            return; // Exit the function once a match is found
-        }
+    if (username === "admin" && password === "admin") {
+        // Redirect to Labtask9_ALFORQUE when username and password are "admin"
+        window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/Labtasks/LT9/Labtask9_ALFORQUE.html";
+    } else if (username === "student1" && password === "1234") {
+        // Redirect to SA1_Alforque when username and password are "student1" and "1234"
+        window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/HTMLS/SA1_Alforque.html";
+    } else {
+        // Show an error message for invalid credentials
+        const loginForm = document.querySelector("#login");
+        setFormMessage(loginForm, "error", "Invalid username or password");
     }
-
-    // If no match is found, show an error message
-    const loginForm = document.querySelector("#login");
-    setFormMessage(loginForm, "error", "Invalid username or password");
 }
 
 

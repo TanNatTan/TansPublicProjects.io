@@ -1,9 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    --color-primary: #545454;
+    --color-primary-dark: #1B1B1B;
+    --color-secondary: #969696;
+    --color-secondary-light:#e7e7e7;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
     list-style: none;
     box-sizing: border-box;
-
 }
 
 body{
@@ -20,7 +25,7 @@ div{
 }
 
 h1{
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -28,7 +33,7 @@ h1{
 }
 
 h2 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: center;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -37,7 +42,7 @@ h2 {
 }
 
 h3 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -47,7 +52,7 @@ h3 {
 }
 
 h4{
-    color: #545454;
+    color: var(--color-primary);
     text-align: left;
     font-family: Arial;
     font-weight: 200;
@@ -65,24 +70,17 @@ div.TopImage{
     flex-wrap: wrap;
     position: absolute;
     width: 400px;
-    left: 875px;
-    top: 15px;
+    right: 65px;
+    top: 13px;
 }
 
 div.Circle{
-    margin-left: 4%;
-}
-
-div.HaoriCircle{
-    position: absolute;
-    left: 1160px;
-    top: 0px;
-
+    margin-left: 6%;
 }
 
 label.reserve {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -92,7 +90,7 @@ label.reserve {
 
 label.year {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -109,7 +107,7 @@ div.TopBar{
 div.Haori{
     position: absolute;
     top:0px;
-    left: 255px;
+    left: 275px;
     width: 250px;
 }
 
@@ -118,29 +116,31 @@ div.SearchBorder {
     width: 400px;
     height: 50px;
     padding: 0px 10px;
-    border: 1px solid white;
-    background-color: #9b9b9b;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
     border-radius: 50px;
     left: 450px;
     top: 15px;
+    z-index: 2;
 }
 
 div.SearchContent {
-    width: 100%;
-    vertical-align: middle;
-} 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
 
-.search{
-    border:none;
-    height: 40  px;
-    width: 315px;
+.search {
+    border: none;
+    height: 40px;
+    width: 325px;
     padding: 0px 5px;
     border-radius: 50px;
     background-color: transparent;
     font-size: 15px;
     font-family: "Arial";
     font-weight: 100;
-    color: #ffffff;
+    color: var(--color-prime-light);
 }
 
 div.NavBar1{
@@ -190,6 +190,26 @@ div.SupportUs{
     top: 50px;
 }
 
+div.Home:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Platforms:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Products:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Services:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.SupportUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
 a {
     color: #1B1B1B;
     padding: 5px;
@@ -202,7 +222,7 @@ a {
 
 div.LogIn{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
@@ -212,12 +232,20 @@ div.LogIn{
 
 div.SignUp{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
     left: 1274px;
     top: 55px;
+}
+
+div.LogIn a:hover {
+    text-decoration: underline; 
+}
+
+div.SignUp a:hover {
+    text-decoration: underline;
 }
 
 body {
@@ -228,7 +256,7 @@ h6 {
     text-align: center;
     font-family: Arial;
     font-weight: 100;
-    color: white;
+    color: var(--color-prime-light);
     padding: 2%;
 }
 
@@ -240,7 +268,7 @@ p {
     text-align: justify;
     font-family: Arial;
     font-size: 20%;
-    color: #545454;
+    color: var(--color-primary);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -256,7 +284,7 @@ div.AboutUsBox {
     width: 1250px;
     height: 80px;
     top: 125px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     margin: 2%;
     font-size: 25px;
 }
@@ -267,7 +295,7 @@ div.ShawBox {
     width: 620px;
     height: 250px;
     top: 210px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     margin: 2%;
     font-size: 25px;
 }
@@ -294,7 +322,7 @@ div.KenBox {
     width: 625px;
     height: 250px;
     top: 210px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     margin: 2%;
     font-size: 25px;
 }
@@ -321,7 +349,7 @@ div.PishBox {
     width: 620px;
     height: 250px;
     top: 470px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     margin: 2%;
     font-size: 25px;
 }
@@ -348,7 +376,7 @@ div.ShiroBox {
     width: 625px;
     height: 250px;
     top: 470px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     margin: 2%;
     font-size: 25px;
 }
@@ -381,14 +409,14 @@ div.Founders{
     margin-left: 47%;
 }
 
-footer{
+footer {
     position: absolute;
-    top: 780px;
+    bottom: -250px;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 8px;
     text-align: center;
-    color: #1B1B1B;
-    background-color: #e7e7e7;
-    font-weight: 800;
+    color: var(--color-primary-dark);
+    background-color: var(--color-secondary-light);
+    font-weight: 200;
     width: 100%;
 }

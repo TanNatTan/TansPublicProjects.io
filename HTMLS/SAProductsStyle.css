@@ -1,17 +1,27 @@
-*{
+* {
+
     padding: 0;
     margin: 0;
+    --color-primary: #545454;
+    --color-primary-dark: #1B1B1B;
+    --color-secondary: #969696;
+    --color-secondary-light:#e7e7e7;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
     list-style: none;
     box-sizing: border-box;
-
 }
 
-body{
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
     background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;   
+    background-size: 100%;
 }
+
 
 div{
     font-size: 150%;
@@ -20,7 +30,7 @@ div{
 }
 
 h1{
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -28,7 +38,7 @@ h1{
 }
 
 h2 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: center;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -37,7 +47,7 @@ h2 {
 }
 
 h3 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -47,7 +57,7 @@ h3 {
 }
 
 h4{
-    color: #545454;
+    color: var(--color-primary);
     text-align: left;
     font-family: Arial;
     font-weight: 200;
@@ -65,24 +75,38 @@ div.TopImage{
     flex-wrap: wrap;
     position: absolute;
     width: 400px;
-    left: 875px;
+    right: 75px;
     top: 15px;
 }
 
-div.Circle{
-    margin-left: 4%;
-}
-
-div.HaoriCircle{
+div.Circle1 {
     position: absolute;
-    left: 1160px;
-    top: 0px;
-
+    margin-left: 0;
+    top: -5px;
 }
+
+div.Circle2 {
+    position: absolute;
+    margin-left: 20%;
+    top: -5px;
+}
+
+div.Circle3 {
+    position: absolute;
+    margin-left: 40%;
+    top: -5px;
+}
+
+div.Circle4 {
+    position: absolute;
+    margin-left: 60%;
+    top: -5px;
+}
+
 
 label.reserve {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -92,7 +116,7 @@ label.reserve {
 
 label.year {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -109,7 +133,7 @@ div.TopBar{
 div.Haori{
     position: absolute;
     top:0px;
-    left: 255px;
+    left: 275px;
     width: 250px;
 }
 
@@ -118,29 +142,31 @@ div.SearchBorder {
     width: 400px;
     height: 50px;
     padding: 0px 10px;
-    border: 1px solid white;
-    background-color: #9b9b9b;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
     border-radius: 50px;
     left: 450px;
     top: 15px;
+    z-index: 2;
 }
 
 div.SearchContent {
-    width: 100%;
-    vertical-align: middle;
-} 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
 
-.search{
-    border:none;
-    height: 40  px;
-    width: 315px;
+.search {
+    border: none;
+    height: 40px;
+    width: 325px;
     padding: 0px 5px;
     border-radius: 50px;
     background-color: transparent;
     font-size: 15px;
     font-family: "Arial";
     font-weight: 100;
-    color: #ffffff;
+    color: var(--color-prime-light);
 }
 
 div.NavBar1{
@@ -182,13 +208,32 @@ div.Services{
     position:absolute;
     left: 66.5%;
     top: 50px;
-
 }
 
 div.SupportUs{
     position:absolute;
     left: 78%;
     top: 50px;
+}
+
+div.Home:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.AboutUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Platforms:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Services:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.SupportUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
 }
 
 a {
@@ -203,7 +248,7 @@ a {
 
 div.LogIn{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
@@ -213,12 +258,20 @@ div.LogIn{
 
 div.SignUp{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
     left: 1274px;
     top: 55px;
+}
+
+div.LogIn a:hover {
+    text-decoration: underline; 
+}
+
+div.SignUp a:hover {
+    text-decoration: underline;
 }
 
 body {
@@ -229,7 +282,7 @@ h6 {
     text-align: center;
     font-family: Arial;
     font-weight: 100;
-    color: white;
+    color: var(--color-prime-light);
     padding: 2%;
 }
 
@@ -240,9 +293,8 @@ strong{
 p {
     text-align: justify;
     font-family: Arial;
-    font-size: 50%;
-    color: #545454;
-    margin-top: 5px;
+    font-size: 20%;
+    color: var(--color-primary);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -253,252 +305,293 @@ div.BoxesAboutUs{
 }
 
 div.AboutUsBox {
-    position: absolute;
+    position: relative;
     left: 15px;
     width: 1250px;
     height: 80px;
-    top: 125px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
     margin: 2%;
     font-size: 25px;
-}
-
-div.AyakaFBox {
-    position: absolute;
-    left: 50px;
-    width: 290px;
-    height: 300px;
-    top: 210px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 25px;
-}
-
-div.AyakaFan {
-    position: absolute;
-    top: 15px;
-    height:50%;
-    width:auto;
-    margin-left: 20px;
-}
-
-div.DescriptionAboutUsAyakaF {
-    position: absolute;
-    top: 200px;
-    height:50%;
-    width:auto;
-    margin-left: 12px;
-}
-
-div.CatHBox {
-    position: absolute;
-    left: 347px;
-    width: 290px;
-    height: 300px;
-    top: 210px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 26px;
-}
-
-div.CatHaori {
-    position: absolute;
-    top: 10px;
-    height:60%;
-    width:auto;
-    margin-left: 50px;
-}
-
-div.DescriptionAboutUsCatH {
-    position: absolute;
-    top: 200px;
-    height:50%;
-    width:auto;
-    margin-left: 50px;
-}
-
-div.ChineseFBox {
-    position: absolute;
-    left: 645px;
-    width: 290px;
-    height: 300px;
-    top: 210px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 26px;
-}
-
-div.ChineseFan {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 55px;
-}
-
-div.DescriptionAboutUsChineseF {
-    position: absolute;
-    top: 200px;
-    height:50%;
-    width:auto;
-    margin-left: 85px;
-}
-
-div.FansBox {
-    position: absolute;
-    left: 945px;
-    width: 290px;
-    height: 300px;
-    top: 210px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 26px;
-}
-
-div.Fans {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 55px;
-}
-
-div.DescriptionAboutUsFans {
-    position: absolute;
-    top: 200px;
-    height:50%;
-    width:auto;
-    margin-left: 75px;
-}
-
-div.FishHBox {
-    position: absolute;
-    left: 50px;
-    width: 290px;
-    height: 350px;
-    top: 520px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 25px;
-}
-
-div.FishHaori {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 35px;
-}
-
-div.DescriptionAboutUsFishH {
-    position: absolute;
-    top: 230px;
-    height:50%;
-    width:auto;
-    margin-left: 53px;
-}
-
-div.FoxHBox {
-    position: absolute;
-    left: 347px;
-    width: 290px;
-    height: 350px;
-    top: 520px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 25px;
-}
-
-div.FoxHaori {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 40px;
-}
-
-div.DescriptionAboutUsFoxH {
-    position: absolute;
-    top: 230px;
-    height:50%;
-    width:auto;
-    margin-left: 60px;
-}
-
-div.GoldHBox {
-    position: absolute;
-    left: 645px;
-    width: 290px;
-    height: 350px;
-    top: 520px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 25px;
-}
-
-div.GoldHaori {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 30px;
-}
-
-div.DescriptionAboutUsGoldH {
-    position: absolute;
-    top: 230px;
-    height:50%;
-    width:auto;
-    margin-left: 45px;
-}
-
-div.MikuHBox {
-    position: absolute;
-    left: 945px;
-    width: 290px;
-    height: 350px;
-    top: 520px;
-    background-color: #e7e7e7;
-    margin: 2%;
-    font-size: 25px;
-}
-
-div.MikuHatsume {
-    position: absolute;
-    top: 15px;
-    height:60%;
-    width:auto;
-    margin-left: 35px;
-}
-
-div.DescriptionAboutUsMikuH {
-    position: absolute;
-    top: 230px;
-    height:50%;
-    width:auto;
-    margin-left: 35px;
 }
 
 div.Prod{
     position: absolute;
     margin-top: 10px;
-    margin-left: 41%;
+    margin-left: 42%;
 }
 
 div.Founders{
     position: absolute;
     margin-top: 43px;
-    margin-left: 32%;
+    margin-left: 29%;
 }
 
-footer{
-    position: absolute;
-    top: 1075px;
-    font-family: Arial;
-    font-size: 12px;
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: var(--color-prime-light);
     text-align: center;
-    color: #1B1B1B;
-    background-color: #e7e7e7;
-    font-weight: 800;
+    font-size: 1.5em;
+    top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btn-header {
+    margin: .5em 15% 2em 15%;
+    color: white;
+    border: 2px solid #2D9CDB;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.btn-header:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.btn-play {
+    display: block;
+    margin: 0 auto;
+    color: #2D9CDB;
+    font-size: 4em;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    text-align: center;
+}
+
+.btn-primary {
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.shop-item {
+    flex-basis: calc(24% - 20px);
+    margin: 10px;
+}
+
+.shop-item-title {
+    display: block;
     width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 250px;
+}
+
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #333;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.shop-item-button {
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+.image-container {
+    width: 300px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
+}
+
+.image-container:hover {
+    box-shadow: 0 0 15px var(--color-primary);
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image fits within the container */
+    max-height: 100%; /* Ensure the image fits within the container */
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+    font-size: 0.7em;
+    color: var(--color-prime-light);
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 0.7em;
+    color: var(--color-prime-light);
+}
+
+.cart-quantity {
+    width: 35%;
+    font-size: 0.7em;
+    color: var(--color-prime-light);
+}
+
+.cart-item-title {
+    color: var(--color-primary-light);
+    margin-left: 2.0em;
+    font-size: 0.5em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid var(--color-prime-dark);
+    background-color: #eee;
+    color: var(--color-prime-dark);
+    padding: 0;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 0.7em;
+    color: var(--color-prime-light);
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: var(--color-prime-light);
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.main-footer {
+    background-color: var(--color-secondary-light);
+    color: var(--color-primary-dark);
+    padding: .25em 0;
+    font-size: 37%;
+    text-align: center;
+}
+
+.main-footer-container {
+    align-items: center;
+    font-family: 'Times New Roman';
+}
+
+.main-footer-container ul {
+    flex-grow: 1;
+    text-align: end;
+    font-weight: 100;
+}
+
+.footer-nav li {
+    padding: 0 .5em;
+}
+
+.footer-nav img {
+    width: 20px;
+    height: 20px;
 }

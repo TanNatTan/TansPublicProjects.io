@@ -1,16 +1,21 @@
 *{
     padding: 0;
     margin: 0;
+    --color-primary: #545454;
+    --color-primary-dark: #1B1B1B;
+    --color-secondary: #969696;
+    --color-secondary-light:#e7e7e7;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
     list-style: none;
     box-sizing: border-box;
-
 }
 
 body{
     background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 100%;   
+    background-size: 100%;
 }
 
 div{
@@ -20,7 +25,7 @@ div{
 }
 
 h1{
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -28,7 +33,7 @@ h1{
 }
 
 h2 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: center;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -37,7 +42,7 @@ h2 {
 }
 
 h3 {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: left;
     font-family: League Spartan;
     src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
@@ -47,7 +52,7 @@ h3 {
 }
 
 h4{
-    color: #545454;
+    color: var(--color-primary);
     text-align: left;
     font-family: Arial;
     font-weight: 200;
@@ -65,24 +70,38 @@ div.TopImage{
     flex-wrap: wrap;
     position: absolute;
     width: 400px;
-    left: 875px;
+    right: 75px;
     top: 15px;
 }
 
-div.Circle{
-    margin-left: 4%;
-}
-
-div.HaoriCircle{
+div.Circle1 {
     position: absolute;
-    left: 1160px;
-    top: 0px;
-
+    margin-left: 0;
+    top: -5px;
 }
+
+div.Circle2 {
+    position: absolute;
+    margin-left: 20%;
+    top: -5px;
+}
+
+div.Circle3 {
+    position: absolute;
+    margin-left: 40%;
+    top: -5px;
+}
+
+div.Circle4 {
+    position: absolute;
+    margin-left: 60%;
+    top: -5px;
+}
+
 
 label.reserve {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -92,7 +111,7 @@ label.reserve {
 
 label.year {
     position: absolute;
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     text-align: right;
     font-family: Arial;
     font-size: 12px;
@@ -109,7 +128,7 @@ div.TopBar{
 div.Haori{
     position: absolute;
     top:0px;
-    left: 255px;
+    left: 275px;
     width: 250px;
 }
 
@@ -118,29 +137,31 @@ div.SearchBorder {
     width: 400px;
     height: 50px;
     padding: 0px 10px;
-    border: 1px solid white;
-    background-color: #9b9b9b;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
     border-radius: 50px;
     left: 450px;
     top: 15px;
+    z-index: 2;
 }
 
 div.SearchContent {
-    width: 100%;
-    vertical-align: middle;
-} 
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
 
-.search{
-    border:none;
-    height: 40  px;
-    width: 315px;
+.search {
+    border: none;
+    height: 40px;
+    width: 325px;
     padding: 0px 5px;
     border-radius: 50px;
     background-color: transparent;
     font-size: 15px;
     font-family: "Arial";
     font-weight: 100;
-    color: #ffffff;
+    color: var(--color-prime-light);
 }
 
 div.NavBar1{
@@ -156,7 +177,6 @@ div.Home{
     position:absolute;
     left: 12%;
     top: 50px;
-
 }
 
 div.AboutUs{
@@ -169,7 +189,7 @@ div.Platforms{
     position:absolute;
     left: 40%;
     top: 50px;
-    text-decoration: underline 2px #545454;
+    text-decoration: underline 2px var(--color-primary);
 }
 
 div.Products{
@@ -190,8 +210,28 @@ div.SupportUs{
     top: 50px;
 }
 
+div.Home:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.AboutUS:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Products:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Services:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.SupportUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
 a {
-    color: #1B1B1B;
+    color: var(--color-primary-dark);
     padding: 5px;
     font-family: 'Times New Roman';
     font-size: 18px;
@@ -202,7 +242,7 @@ a {
 
 div.LogIn{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
@@ -212,12 +252,20 @@ div.LogIn{
 
 div.SignUp{
     position: absolute;
-    color: #545454;
+    color: var(--color-primary);
     font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
     left: 1274px;
     top: 55px;
+}
+
+div.LogIn a:hover {
+    text-decoration: underline; 
+}
+
+div.SignUp a:hover {
+    text-decoration: underline;
 }
 
 a.blacksheep{
@@ -249,15 +297,64 @@ p {
     margin-right: 10px;
 }
 
-div.boxes {
-    position: absolute;
-    left: 10px;
-    top: 115px;
-    width: 1275px;
-    height: 175px;
-    background-color: #e7e7e7;
-    margin: 2%;
+.content-section {
+    margin: 1em;
 }
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: var(--color-prime-light);
+    text-align: center;
+    font-size: 1.5em;
+    top: 100px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.platform-box {
+    flex-basis: calc(10% - 5px);
+    margin: 1px;
+}
+
+.platform {
+    height: 250px;
+}
+
+.platform-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
+}
+
+.image-container:hover {
+    box-shadow: 0 0 15px var(--color-primary);
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 
 div.TextSize {
     position: absolute;
@@ -265,14 +362,15 @@ div.TextSize {
     top: 60px;
 }
 
-footer{
+footer {
     position: absolute;
-    top: 780px;
+    bottom: 0px;
     font-family: Arial;
-    font-size: 12px;
+    font-size: 8px;
     text-align: center;
-    color: #1B1B1B;
-    background-color: #e7e7e7;
-    font-weight: 800;
+    color: var(--color-primary-dark);
+    background-color: var(--color-secondary-light);
+    font-weight: 200;
     width: 100%;
 }
+
