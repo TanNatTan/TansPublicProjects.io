@@ -22,7 +22,7 @@ function getInfo() {
 
     if (username === "admin" && password === "admin") {
         // Redirect to Labtask9_ALFORQUE when username and password are "admin"
-        window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/Labtasks/LT9/Labtask9_ALFORQUE.html";
+        window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/Labtasks/LT9/SA1  _ALFORQUE.html";
     } else if (username === "student1" && password === "1234") {
         // Redirect to SA1_Alforque when username and password are "student1" and "1234"
         window.location.href = "file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/HTMLS/SA1_Alforque.html";

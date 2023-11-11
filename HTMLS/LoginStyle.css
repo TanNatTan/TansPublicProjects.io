@@ -10,6 +10,9 @@ body{
     --color-primary: #545454;
     --color-primary-dark: #1B1B1B;
     --color-secondary: #969696;
+    --color-secondary-light:#e7e7e7;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
     --color-error: #cc3333;
     --color-success: #4bb544;
     --border-radius: 4px;
@@ -78,15 +81,15 @@ div.container,form__input,form__button {
     padding: 0.75rem;
     box-sizing: border-box;
     border-radius: var(--border-radius);
-    border: 1px solid #e7e7e7;
+    border: 1px solid var(--color-secondary-light);
     outline: none;
-    background: #ffffff;
+    background: var(--color-prime-light);
         transition: background 0.2s, border-color 0.2s;
 }
 
 .form__input:focus {
     border-color: var(--color-primary);
-    background: #ffffff;
+    background: var(--color-prime-light);
 }
 
 .form__input--error {

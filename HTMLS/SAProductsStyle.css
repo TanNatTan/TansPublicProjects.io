@@ -299,12 +299,12 @@ p {
     margin-right: 10px;
 }
 
-div.BoxesAboutUs{
+div.BoxesProducts{
     height: 100%;
     color: transparent;
 }
 
-div.AboutUsBox {
+div.ProdBox {
     position: relative;
     left: 15px;
     width: 1250px;
@@ -323,7 +323,7 @@ div.Prod{
     margin-left: 42%;
 }
 
-div.Founders{
+div.List{
     position: absolute;
     margin-top: 43px;
     margin-left: 29%;
