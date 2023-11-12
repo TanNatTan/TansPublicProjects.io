@@ -1,166 +1,154 @@
-body {
+*{
     margin: 0;
     padding: 0;
-
     --color-primary: #545454;
     --color-primary-dark: #1B1B1B;
     --color-secondary: #969696;
     --color-secondary-light:#e7e7e7;
-    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);    background-repeat: no-repeat;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100%;
 }
 
-h1 {
+div{
+    font-size: 150%;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
     color: var(--color-primary-dark);
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
 }
 
 h2 {
     color: var(--color-primary-dark);
+    text-align: center;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
 }
 
 h3 {
     color: var(--color-primary-dark);
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+    margin-left: 10px;
 }
 
-h4 {
-    color: var(--color-primary-dark);
+h4{
+    color: var(--color-primary);
+    text-align: left;
+    font-family: Arial;
+    font-weight: 200;
+    font-size: 23px;
 }
 
 h5 {
-    color: var(--color-primary-dark);
+    font-weight: 100;
 }
 
-.TopBar {
-    position: static;
+div.TopImage{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 400px;
+    right: 75px;
+    top: 15px;
+}
+
+div.Circle1 {
+    position: absolute;
+    margin-left: 0;
+    top: -5px;
+}
+
+div.Circle2 {
+    position: absolute;
+    margin-left: 20%;
+    top: -5px;
+}
+
+div.Circle3 {
+    position: absolute;
+    margin-left: 40%;
+    top: -5px;
+}
+
+div.Circle4 {
+    position: absolute;
+    margin-left: 60%;
+    top: -5px;
+}
+
+
+label.reserve {
+    position: absolute;
+    color: var(--color-primary-dark);
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1250px;
     top: 0px;
-    left: 0;
-    width: 100%;
+}
+
+label.year {
+    position: absolute;
+    color: var(--color-primary-dark);
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1325px;
+    top: 10px;
+}
+
+div.TopBar{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/TopNavigationBar.png);
+    background-size: 100%;
     height: 77px;
-    background-image: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/TopNavigationBar.png);
-    background-size: 100%;
-    background-color: var(--color-primary);
-    color: var(--color-primary-dark);
-    text-align: left;
-    line-height: 10px;
-    padding-top: 5px;
-    padding-left: 10px; /* Add left padding to move the text slightly left */
-    font-size: 18px; /* Change the text size to 18 pixels */
-    border-radius: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    z-index: 1;
 }
 
-div.NavBar1{
-    position: static;
-    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/BottomNavigationBar.png);
-    background-size: 100%;
-    width: 100%;
-    top: 10px;
-    font-size: 35px;
-    height: 33px;
-    text-decoration: none;
-    line-height: 10px;
-    padding-left: 10px; /* Add left padding to move the text slightly left */
-    font-size: 18px; /* Change the text size to 18 pixels */
-    z-index: 1;
+div.Haori{
+    position: absolute;
+    top:0px;
+    left: 275px;
+    width: 250px;
 }
 
-div.Home{
-    position:relative;
-    left: 12%;
-    top: 10px;
-    text-decoration: underline 2px var(--color-primary);
-}
-
-div.AboutUs{
-    position:relative;
-    left: 25%;
-    top: 0px;
-}
-
-div.Platforms{
-    position:relative;
-    left: 40%;
-    top: -10px;
-}
-
-div.Products{
-    position:relative;
-    left: 53%;
-    top: -20px;
-}
-
-div.Services{
-    position:relative;
-    left: 66.5%;
-    top: -30px;
-}
-
-div.SupportUs{
-    position:relative;
-    left: 78%;
-    top: -40px;
-}
-
-div.Home a {
-    left: 12%;
-    top: 90px;
-    text-decoration: underline 2px #545454;
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-div.AboutUs a {
-    left: 25%;
-    top: 90px;
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-
-div.Platforms a {
-    left: 40%;
-    top: 90px;
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-
-div.Products a {
-    left: 53%;
-    top: 90px;
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-
-div.Services a {
-    left: 66.5%;
-    top: 90px;
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-
-div.SupportUs a {
-    left: 78%;
-    top: 90px;
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
+div.SearchBorder {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+    left: 450px;
+    top: 15px;
+    z-index: 2;
 }
 
 div.SearchContent {
     display: flex; /* Use flexbox */
     justify-content: center; /* Center content horizontally */
     align-items: center; /* Center content vertically */
-}
-
-div.Haori{
-    position: relative;
-    top: -82px;
-    left: 275px;
-    width: 250px;
-    z-index: 2;
 }
 
 .search {
@@ -173,95 +161,103 @@ div.Haori{
     font-size: 15px;
     font-family: "Arial";
     font-weight: 100;
-    color: #ffffff;
+    color: var(--color-prime-light);
 }
 
-div.SearchBorder {
-    position: relative;
-    width: 400px;
-    height: 50px;
-    padding: 0px 10px;
-    border: 1px solid var(--color-secondary);
-    background-color: var(--color-secondary);
-    border-radius: 50px;
-    left: 380px;
-    top: -150px;
-    z-index: 2;
+div.NavBar1{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/BottomNavigationBar.png);
+    background-size: 100%;
+    top: 70px;
+    font-size: 35px;
+    height: 33px;
+    text-decoration: none;
 }
 
-div.TopImage{
-    position: relative;
-    top: -200px;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 400px;
-    left: 875px;
-    z-index: 2;
+div.Home{
+    position:absolute;
+    left: 12%;
+    top: 50px;
+    text-decoration: underline 2px var(--color-primary);
 }
 
-div.Circle{
-    position: relative;
-    margin-left: 4%;
+div.AboutUs{
+    position:absolute;
+    left: 25%;
+    top: 50px;
 }
 
-label.reserve {
-    position: relative;
+div.Platforms{
+    position:absolute;
+    left: 40%;
+    top: 50px;
+}
+
+div.Products{
+    position:absolute;
+    left: 53%;
+    top: 50px;
+}
+
+div.Services{
+    position:absolute;
+    left: 66.5%;
+    top: 50px;
+}
+
+div.SupportUs{
+    position:absolute;
+    left: 78%;
+    top: 50px;
+}
+
+div.AboutUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Platforms:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Products:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Services:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.SupportUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+a {
     color: var(--color-primary-dark);
-    text-align: right;
-    font-family: Arial;
-    font-size: 10px;
+    padding: 5px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
     font-weight: 100;
-    right: 10px;
-    top: -280px;
-    z-index: 2;
-}
-
-label.year {
-    position: relative;
-    color: var(--color-primary-dark);
-    text-align: right;
-    font-family: Arial;
-    font-size: 10px;
-    font-weight: 100;
-    right: 12px;
-    top: -292px;
-    z-index: 2;
+    text-decoration: none;
+    top: 5px;
 }
 
 div.LogIn{
-    position: relative;
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-    font-family: 'Times New Roman';
-    text-align: right;
+    position: absolute;
+    color: var(--color-primary);
+    font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
-    right: 10px;
-    top: -300px;
-    z-index: 2;
+    left: 1287px;
+    top: 35px;
 }
 
 div.SignUp{
-    position: relative;
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-    font-family: 'Times New Roman';
-    text-align: right;
+    position: absolute;
+    color: var(--color-primary);
+    font-family: 'Arial';
     font-size: 18px;
     font-weight: 100;
-    right: 10px;
-    top: -300px;
-    z-index: 2;
-}
-
-div.LogIn a {
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
-}
-
-div.SignUp a {
-    text-decoration: none; /* Remove underlines from anchor tags */
-    color: var(--color-primary-dark); /* Change text color to #1B1B1B */
+    left: 1274px;
+    top: 55px;
 }
 
 div.LogIn a:hover {
@@ -272,19 +268,51 @@ div.SignUp a:hover {
     text-decoration: underline;
 }
 
-div.boxes {
+body {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    color: var(--color-prime-light);
+    padding: 2%;
+}
+
+strong{
+    font-size: 125%;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20%;
+    color: var(--color-primary);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.boxes{
     height: 100%;
     color: transparent;
 }
 
-div.FeatureBox {
+div.FeatureBox{
     position: absolute;
     width: 520px;
     height: 910px;
     background-color: var(--color-secondary-light);
     margin: 2%;
+}
+
+.FeatureBox {
     overflow: hidden;
+    position: absolute;
     text-align: center;
+    width: 425px;
+    height: 900px;
+    background-color: var(--color-secondary-light);
     color: var(--color-prime-light);
     padding: 10px;
     border-radius: 5px;
@@ -296,38 +324,11 @@ div.FeatureBox {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
 }
 
-/* Add styles for the slider container */
-.slider-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-/* Add styles for the individual slides */
-.slider {
-    display: flex;
-    transition: transform 2s ease-in-out; /* Adjust slide speed here */
-}
-
-.slide {
-    width: 100%;
-}
-
-.slide a {
-    display: block;
-}
-
-.slide img {
-    width: 100%;
-    height: auto;
-}
-
 @keyframes slide_animation {
     0% {left: 2400px;} /* Start from the last position */
     10% {left: 2400px;}
     20% {left: 1200px;}
-    30% {left: 1200px;}
+    30% {left: 1200px;} 
     40% {left: 0px;} /* Back to the first position */
     50% {left: 0px;}
     60% {left: -1200px;} /* Move to the left */
@@ -359,8 +360,8 @@ div.FeatureBox {
     right: -100px;
     -webkit-animation-name: slide_animation;
     animation-name: slide_animation;
-    -webkit-animation-duration: 10s;
-    animation-duration: 10s;
+    -webkit-animation-duration: 20s;
+    animation-duration: 20s;
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
     -webkit-animation-direction: normal; /* Set to 'normal' to loop forward */
@@ -369,40 +370,54 @@ div.FeatureBox {
     animation-play-state: running;
 }
 
-.img-container {
-    left: 812.5px;
-    height: 1650px;
+.Fimg-container {
+    left: 850px;
+    height: 1600px;
     width: 1200px;
     position: relative;
     float: right;
 }
 
-div.ContentBox{
+
+.FeatureSlider-nav{
+    display: flex;
+    column-gap: 1rem;
     position: absolute;
-    top: 100px;
-    left: 550px;
-    width: 738px;
-    height: 275px;
-    background-color: #e7e7e7;
-    margin: 2%;
+    bottom: 1.25rem;
+    left: 275px;
+    transform: translateX(-50%);
+    z-index: 3;
 }
 
-div.SponsorBox{
+.FeatureSlider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-dark);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.FeatureSlider-nav a:hover{
+    background-color: var(--color-prime-dark);
+}
+
+div.ContentBox{
     position: absolute;
-    top: 100px;
     left: 550px;
     width: 738px;
     height: 275px;
+    margin: 2%;
     background-color: var(--color-secondary-light);
-    color: #fff;
+    color: var(--color-prime-light);
     padding: 10px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 15px var(--color-prime-dark);
     z-index: 2;
 }
 
-.SponsorBox:hover {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+.DadService:hover, .ShootYourShot:hover {
+    box-shadow: 0 0 15px var(--color-prime-dark);
 }
 
 div.ServiceBox{
@@ -411,7 +426,12 @@ div.ServiceBox{
     top: 418px;
     width: 395px;
     height: 400px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
+    z-index: 2;
     margin: 2%;
 }
 
@@ -421,7 +441,12 @@ div.PlatformBox{
     top: 418px;
     width: 310px;
     height: 400px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
+    z-index: 2;
     margin: 2%;
 }
 
@@ -431,8 +456,111 @@ div.BuyBox{
     top: 845px;
     width: 736px;
     height: 175px;
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
+    color: var(--color-prime-light);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px var(--color-prime-dark);
     margin: 2%;
+    z-index: 2;
+}
+
+div.DadService{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+div.ShootYourShot{
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 365px;
+}
+
+div.ServiceCalendar{
+    position: absolute;
+    height: 10%;
+    width:auto;
+    margin-left:60px;
+}
+
+div.FB{
+    position: absolute;
+    margin-left: 112px;
+    top: 85px;
+}
+
+div.IG{
+    position: absolute;
+    margin-left: 112px;
+    top: 185px;
+}
+
+div.YT{
+    position: absolute;
+    margin-left: 112px;
+    top: 285px;
+}
+
+.Buycontainer {
+    padding: 1rem;
+    text-align: center;
+}
+
+.Buycontainer a {
+    padding: 3px;
+}
+
+.Buyslider-wrapper {
+    position: relative;
+    bottom: 20px;
+    right: 20px;
+    width: 736px;
+    height: 134px;
+    margin: 0 auto;
+    z-index: 4;
+}
+
+.Buyslider {
+    display: flex;
+    width: 730px;
+    height: 114px;
+    overflow: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+    white-space: nowrap;
+}
+
+.Buyslider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.Buyslider-nav {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.Buyslider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: var(--color-primary-dark);
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.Buyslider-nav a:hover {
+    background-color: var(--color-secondary);
 }
 
 footer {
@@ -442,9 +570,8 @@ footer {
     font-size: 8px;
     text-align: center;
     color: var(--color-primary-dark);
-    background-color: #e7e7e7;
+    background-color: var(--color-secondary-light);
     font-weight: 200;
     width: 100%;
 }
-
 

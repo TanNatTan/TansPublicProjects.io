@@ -1,0 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:url(nguyen-khanh-ly-liiusuaISP0-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;   
+}
+
+div{
+    font-size: 150%;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+}
+
+div.NavBar1{
+    font-family: Arial;
+    background: rgb(156, 138, 138);
+    height: 30px;
+    text-align: left;
+    font-size: 30px;
+}
+
+a{
+    color: rgb(255, 255, 255);
+}
+
+a.blacksheep{
+    float: right;
+}
+
+li{
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    text-align: center;
+}
+
+h5 {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 30%;
+    color: white;
+    padding: 1%;
+}
+
+h6 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    padding: 2%;
+}
+
+strong{
+    font-size: 125%;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20%;
+    color: white;
+    padding: 1%;
+}
+
+footer {
+    background-color: rgb(156, 138, 138);
+}
+
+li{
+    color: white;
+}
+
+div.boxes{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+div.MCMBox{
+    width: 900px;
+    height: 400px;
+    background-color: rgb(156, 138, 138);
+    padding: 1%;
+    margin: 1%;
+}
+
+div.MeBox{
+    width: 380px;
+    height: 275px;
+    background-color: rgb(156, 138, 138);
+    padding: 1%;
+    margin: 1%;
+}
+
+div.CEABox{
+    width: 900px;
+    height: 400px;
+    background-color: rgb(156, 138, 138);
+    padding: 1%;
+    margin: 1%;
+}
+
+div.FaveBox{
+    width: 380px;
+    height: 525px;
+    background-color: rgb(156, 138, 138);
+    padding: 1%;
+    margin: 1%;
+}
+
+li{
+    font-size: 20%;
+    text-align:justify;
+}
+
+div.MMCMtext {
+    clear: left;
+    display: block;
+}
+
+div.ICPEPtext {
+    clear: left;
+    display: block;
+}
+
+footer{
+    font-family: Arial;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    padding: 1%;
+    font-weight: 100;
+}

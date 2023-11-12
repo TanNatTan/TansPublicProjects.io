@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    --color-primary: #545454;
+    --color-primary-dark: #1B1B1B;
+    --color-secondary: #969696;
+    --color-secondary-light:#e7e7e7;
+    --color-prime-light: #ffffff;
+    --color-prime-dark: #000000;
+    list-style: none;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/Mountains_Background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+div{
+    font-size: 150%;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1{
+    color: var(--color-primary-dark);
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+}
+
+h2 {
+    color: var(--color-primary-dark);
+    text-align: center;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+}
+
+h3 {
+    color: var(--color-primary-dark);
+    text-align: left;
+    font-family: League Spartan;
+    src: url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/LeagueSpartan-Bold.otf);
+    font-weight: 800;
+    font-size: 36px;
+    margin-left: 10px;
+}
+
+h4{
+    color: var(--color-primary);
+    text-align: left;
+    font-family: Arial;
+    font-weight: 200;
+    font-size: 23px;
+}
+
+h5 {
+    font-weight: 100;
+}
+
+div.TopImage{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 400px;
+    right: 75px;
+    top: 15px;
+}
+
+div.Circle1 {
+    position: absolute;
+    margin-left: 0;
+    top: -5px;
+}
+
+div.Circle2 {
+    position: absolute;
+    margin-left: 20%;
+    top: -5px;
+}
+
+div.Circle3 {
+    position: absolute;
+    margin-left: 40%;
+    top: -5px;
+}
+
+div.Circle4 {
+    position: absolute;
+    margin-left: 60%;
+    top: -5px;
+}
+
+
+label.reserve {
+    position: absolute;
+    color: var(--color-primary-dark);
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1250px;
+    top: 0px;
+}
+
+label.year {
+    position: absolute;
+    color: var(--color-primary-dark);
+    text-align: right;
+    font-family: Arial;
+    font-size: 12px;
+    left: 1325px;
+    top: 10px;
+}
+
+div.TopBar{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/TopNavigationBar.png);
+    background-size: 100%;
+    height: 77px;
+}
+
+div.Haori{
+    position: absolute;
+    top:0px;
+    left: 275px;
+    width: 250px;
+}
+
+div.SearchBorder {
+    position: absolute;
+    width: 400px;
+    height: 50px;
+    padding: 0px 10px;
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-secondary);
+    border-radius: 50px;
+    left: 450px;
+    top: 15px;
+    z-index: 2;
+}
+
+div.SearchContent {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.search {
+    border: none;
+    height: 40px;
+    width: 325px;
+    padding: 0px 5px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    font-family: "Arial";
+    font-weight: 100;
+    color: var(--color-prime-light);
+}
+
+div.NavBar1{
+    background-image:url(file:///C:/Users/Admin/Documents/GitHub/TansPublicProjects.io/SA1Main/BottomNavigationBar.png);
+    background-size: 100%;
+    top: 70px;
+    font-size: 35px;
+    height: 33px;
+    text-decoration: none;
+}
+
+div.Home{
+    position:absolute;
+    left: 12%;
+    top: 50px;
+}
+
+div.AboutUs{
+    position:absolute;
+    left: 25%;
+    top: 50px;
+}
+
+div.Platforms{
+    position:absolute;
+    left: 40%;
+    top: 50px;
+}
+
+div.Products{
+    position:absolute;
+    left: 53%;
+    top: 50px;
+}
+
+div.Services{
+    position:absolute;
+    left: 66.5%;
+    top: 50px;
+    text-decoration: underline 2px var(--color-primary);
+}
+
+div.SupportUs{
+    position:absolute;
+    left: 78%;
+    top: 50px;
+}
+
+div.Home:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.AboutUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Platforms:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.Products:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+div.SupportUs:hover {
+    text-decoration: underline 2px var(--color-secondary);
+}
+
+a {
+    color: var(--color-primary-dark);
+    padding: 5px;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    font-weight: 100;
+    text-decoration: none;
+    top: 5px;
+}
+
+div.LogIn{
+    position: absolute;
+    color: var(--color-primary);
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1287px;
+    top: 35px;
+}
+
+div.SignUp{
+    position: absolute;
+    color: var(--color-primary);
+    font-family: 'Arial';
+    font-size: 18px;
+    font-weight: 100;
+    left: 1274px;
+    top: 55px;
+}
+
+div.LogIn a:hover {
+    text-decoration: underline; 
+}
+
+div.SignUp a:hover {
+    text-decoration: underline;
+}
+
+a.blacksheep{
+    float: right;
+}
+
+body {
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+    font-family: Arial;
+    font-weight: 100;
+    color: white;
+    padding: 2%;
+}
+
+strong{
+    font-size: 125%;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial;
+    font-size: 20%;
+    color: #545454;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.boxes {
+    position: absolute;
+    left: 10px;
+    top: 115px;
+    width: 1275px;
+    height: 175px;
+    background-color: #e7e7e7;
+    margin: 2%;
+}
+
+div.Calendar {
+    position: absolute;
+    top: 115px;
+    height:100%;
+    width:auto;
+    margin: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: -500px;
+    font-family: Arial;
+    font-size: 8px;
+    text-align: center;
+    color: var(--color-primary-dark);
+    background-color: var(--color-secondary-light);
+    font-weight: 200;
+    width: 100%;
+}
